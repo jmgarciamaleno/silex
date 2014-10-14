@@ -1,0 +1,9 @@
+{
+    "require": {
+        "silex/silex": "~1.2",
+        "doctrine/mongodb-odm": "1.0.0-BETA11"
+    },
+    "autoload": {
+        "psr-0": { "": "src/" }
+    }
+}
