@@ -1,12 +1,11 @@
-silex
-=====
+# Silex MongoDB
 
-My personal Silex for testing purposes.
+Silex with localhost MongoDB connection using Doctrine ODM MongoDB.
 
-Localhost MongoDB connection using Doctrine ODM MongoDB. Database "silex", no auth, Dot object/collection.
+Database "silex", no auth, Dot object/collection for testing purposes.
 
-###API:
+## API
 
-**/setPoint/{x}/{y}**
+**/setDot/{x}/{y}**
 
-**/getPoint/{id}**
+**/getDot/{id}**
