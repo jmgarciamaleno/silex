@@ -10,7 +10,7 @@ use Doctrine\ODM\MongoDB\Mapping\Driver\AnnotationDriver;
 use jmgm\simple\Document\HelloWorld;
 use jmgm\simple\Document\Dot;
 
-const POINT_CLASS = 'jmgm\simple\Document\Dot';
+const DOT_CLASS = 'jmgm\simple\Document\Dot';
 
 if (!\file_exists($file = __DIR__.'/vendor/autoload.php')) {
     throw new \RuntimeException('Install dependencies to run this script.');
@@ -54,7 +54,7 @@ $app->get('/getDot/{id}', function ($id) {
     $dm = doctrineODMSetup();
 
     try {
-        $dot = $dm->find(POINT_CLASS, $id);
+        $dot = $dm->find(DOT_CLASS, $id);
     } catch (\Exception $e) {
         throw new \Exception("Error retrieving object with id: $id .");
     }
